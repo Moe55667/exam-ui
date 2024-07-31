@@ -47,7 +47,7 @@ const handleSubmit = async () => {
       console.log('Auth Token:', authToken);
       if (authToken) {
         // Save the token in localStorage
-        localStorage.setItem('auth_token', authToken);
+        localStorage.setItem('Token ', authToken);
         //Save user info to the store
         userStore.name = formData.value.username
         userStore.isLoggedIn = true
