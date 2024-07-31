@@ -6,7 +6,7 @@ const useFetch = createFetch({
   baseUrl: baseURL,
   options: {
     async beforeFetch({ options }) {
-      const token = localStorage.getItem('auth_token'); 
+      const token = localStorage.getItem('Token'); 
       options.headers = {
         ...options.headers,
         'Authorization': `Token ${token}`,
