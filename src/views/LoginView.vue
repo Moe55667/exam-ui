@@ -1,12 +1,12 @@
 <script setup>
-import Navbar from "./../components/Navbar.vue";
-import Bg from "./../components/Bg.vue";
-import Footer from "./../components/Footer.vue";
+import { useUserStore } from "@/stores/userStore.js";
+import { useFetch } from "@vueuse/core";
 import { ref } from "vue";
 import { useRouter } from 'vue-router';
-import { useFetch } from "@vueuse/core";
-import { useUserStore } from "@/stores/userStore.js"
 import { useToast } from "vue-toastification";
+import Bg from "./../components/Bg.vue";
+import Footer from "./../components/Footer.vue";
+import Navbar from "./../components/Navbar.vue";
 
 
 // initialize user store
@@ -85,14 +85,14 @@ const handleSubmit = async () => {
         <div class="p-4 sm:p-7">
           <div class="text-center">
             <h1 class="block text-2xl font-bold text-gray-800">Sign in</h1>
-            <p class="mt-2 text-sm text-gray-600">
+            <!-- <p class="mt-2 text-sm text-gray-600">
               Don't have an account yet?
               <router-link :to="{ name: 'register' }">
                 <a class="text-blue-600 decoration-2 hover:underline font-medium">
                   Sign up here
                 </a>
               </router-link>
-            </p>
+            </p> -->
           </div>
 
           <div class="mt-5">

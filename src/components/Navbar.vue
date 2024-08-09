@@ -1,5 +1,5 @@
 <script setup>
-import Logo from "@/components/Logo.vue"
+import Logo from "@/components/Logo.vue";
 </script>
 
 <template>
@@ -38,14 +38,14 @@ import Logo from "@/components/Logo.vue"
           <div id="navbar-collapse-with-animation"
               class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
               <div class="flex flex-col md:flex-row md:items-center md:justify-end py-2 md:py-0 md:ps-7">
-                  <router-link :to="{name:'register'}">
+                  <!-- <router-link :to="{name:'register'}">
                   <a class="flex items-center gap-x-2 mr-4 font-medium text-gray-500 hover:text-blue-600 md:border-s md:border-gray-300 py-2 md:py-0 md:my-6 md:ps-6"
                       href="#">
                       <ion-icon style="font-size: 24px;" name="person-outline"></ion-icon>
                       Register
                       
                   </a>
-                  </router-link>
+                  </router-link> -->
                   <router-link :to="{name:'login'}">
                   <a class="flex items-center gap-x-2 mr-4 font-medium text-gray-500 hover:text-blue-600 md:border-s md:border-gray-300 py-2 md:py-0 md:my-6 md:ps-6"
                       href="#">
