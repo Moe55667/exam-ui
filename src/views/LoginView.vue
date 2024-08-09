@@ -32,7 +32,7 @@ const status = ref(null);
 const handleSubmit = async () => {
   loading.value = true;
   try {
-    const { data, error: fetchError, statusCode } = await useFetch('http://127.0.0.1:8000/auth/token/login/')
+    const { data, error: fetchError, statusCode } = await useFetch('https://exam-api.up.railway.app/auth/token/login/')
       .post(formData.value)
       .json();
 
@@ -46,7 +46,7 @@ const handleSubmit = async () => {
       const authToken = data.value.auth_token;
       console.log('Auth Token:', authToken);
       if (authToken) {
-        // Save the token in localStorage
+        // Save the token in localStorage 
         localStorage.setItem('auth_token', authToken);
         //Save user info to the store
         userStore.name = formData.value.username
